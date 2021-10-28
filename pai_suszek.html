@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>Document</title>
+	</head>
+	<body>
+		<header>
+			<h1>PAI</h1>
+		</header>
+		<main>
+			<input type="text" />
+			<input type="button" value="wyślij" />
+			<p></p>
+
+			<script>
+				let text = document.querySelector("[type=text]");
+				let guzik = document.querySelector("[type=button]");
+
+				guzik.addEventListener("click", slowa);
+
+				function slowa() {
+					document.querySelector("p").innerText = "cześć " + text.value;
+				}
+			</script>
+		</main>
+	</body>
+</html>
